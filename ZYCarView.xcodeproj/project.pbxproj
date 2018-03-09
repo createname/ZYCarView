@@ -15,6 +15,11 @@
 		117733BE2051299800371805 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 117733BD2051299800371805 /* main.m */; };
 		117733C82051299900371805 /* ZYCarViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 117733C72051299900371805 /* ZYCarViewTests.m */; };
 		117733D32051299900371805 /* ZYCarViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 117733D22051299900371805 /* ZYCarViewUITests.m */; };
+		117733E320512AFE00371805 /* ZYCarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 117733E220512AFE00371805 /* ZYCarView.m */; };
+		117733E620512D0A00371805 /* ZYCarViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 117733E520512D0A00371805 /* ZYCarViewLayout.m */; };
+		117733ED20512DC600371805 /* ZYCarCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 117733EB20512DC600371805 /* ZYCarCollectionViewCell.m */; };
+		117733EE20512DC600371805 /* ZYCarCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 117733EC20512DC600371805 /* ZYCarCollectionViewCell.xib */; };
+		1183CAA2205239C600E4024C /* ZYCarModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1183CAA1205239C600E4024C /* ZYCarModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,15 @@
 		117733CE2051299900371805 /* ZYCarViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZYCarViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		117733D22051299900371805 /* ZYCarViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYCarViewUITests.m; sourceTree = "<group>"; };
 		117733D42051299900371805 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		117733E120512AFE00371805 /* ZYCarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYCarView.h; sourceTree = "<group>"; };
+		117733E220512AFE00371805 /* ZYCarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYCarView.m; sourceTree = "<group>"; };
+		117733E420512D0A00371805 /* ZYCarViewLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYCarViewLayout.h; sourceTree = "<group>"; };
+		117733E520512D0A00371805 /* ZYCarViewLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYCarViewLayout.m; sourceTree = "<group>"; };
+		117733EA20512DC600371805 /* ZYCarCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYCarCollectionViewCell.h; sourceTree = "<group>"; };
+		117733EB20512DC600371805 /* ZYCarCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYCarCollectionViewCell.m; sourceTree = "<group>"; };
+		117733EC20512DC600371805 /* ZYCarCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZYCarCollectionViewCell.xib; sourceTree = "<group>"; };
+		1183CAA0205239C600E4024C /* ZYCarModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYCarModel.h; sourceTree = "<group>"; };
+		1183CAA1205239C600E4024C /* ZYCarModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYCarModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +115,7 @@
 		117733AD2051299800371805 /* ZYCarView */ = {
 			isa = PBXGroup;
 			children = (
+				117733E020512ADC00371805 /* CarView */,
 				117733AE2051299800371805 /* AppDelegate.h */,
 				117733AF2051299800371805 /* AppDelegate.m */,
 				117733B12051299800371805 /* ViewController.h */,
@@ -130,6 +145,22 @@
 				117733D42051299900371805 /* Info.plist */,
 			);
 			path = ZYCarViewUITests;
+			sourceTree = "<group>";
+		};
+		117733E020512ADC00371805 /* CarView */ = {
+			isa = PBXGroup;
+			children = (
+				117733E120512AFE00371805 /* ZYCarView.h */,
+				117733E220512AFE00371805 /* ZYCarView.m */,
+				117733E420512D0A00371805 /* ZYCarViewLayout.h */,
+				117733E520512D0A00371805 /* ZYCarViewLayout.m */,
+				117733EA20512DC600371805 /* ZYCarCollectionViewCell.h */,
+				117733EB20512DC600371805 /* ZYCarCollectionViewCell.m */,
+				117733EC20512DC600371805 /* ZYCarCollectionViewCell.xib */,
+				1183CAA0205239C600E4024C /* ZYCarModel.h */,
+				1183CAA1205239C600E4024C /* ZYCarModel.m */,
+			);
+			path = CarView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +269,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				117733EE20512DC600371805 /* ZYCarCollectionViewCell.xib in Resources */,
 				117733BB2051299800371805 /* LaunchScreen.storyboard in Resources */,
 				117733B82051299800371805 /* Assets.xcassets in Resources */,
 				117733B62051299800371805 /* Main.storyboard in Resources */,
@@ -267,6 +299,10 @@
 			files = (
 				117733B32051299800371805 /* ViewController.m in Sources */,
 				117733BE2051299800371805 /* main.m in Sources */,
+				117733ED20512DC600371805 /* ZYCarCollectionViewCell.m in Sources */,
+				1183CAA2205239C600E4024C /* ZYCarModel.m in Sources */,
+				117733E620512D0A00371805 /* ZYCarViewLayout.m in Sources */,
+				117733E320512AFE00371805 /* ZYCarView.m in Sources */,
 				117733B02051299800371805 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

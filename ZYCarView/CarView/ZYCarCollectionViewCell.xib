@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ZYCarCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="214" height="188"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="214" height="188"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BhP-VN-1It">
+                        <rect key="frame" x="0.0" y="0.0" width="214" height="118.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="BhP-VN-1It" secondAttribute="height" multiplier="155:86" id="VFo-xt-GnJ"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KON-IY-JlK">
+                        <rect key="frame" x="0.0" y="118.5" width="214" height="69.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="l发哦I时代FOIA搜i的佛爱地方" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BnT-ab-VwM">
+                                <rect key="frame" x="5" y="0.0" width="204" height="69.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="BnT-ab-VwM" secondAttribute="trailing" constant="5" id="68W-lC-bMB"/>
+                            <constraint firstItem="BnT-ab-VwM" firstAttribute="leading" secondItem="KON-IY-JlK" secondAttribute="leading" constant="5" id="DHr-DX-4E1"/>
+                            <constraint firstAttribute="bottom" secondItem="BnT-ab-VwM" secondAttribute="bottom" id="PEs-df-Msh"/>
+                            <constraint firstItem="BnT-ab-VwM" firstAttribute="top" secondItem="KON-IY-JlK" secondAttribute="top" id="unu-vI-RdS"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="KON-IY-JlK" secondAttribute="bottom" id="86J-tL-L2N"/>
+                <constraint firstItem="KON-IY-JlK" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="E2i-e7-E9N"/>
+                <constraint firstAttribute="trailing" secondItem="KON-IY-JlK" secondAttribute="trailing" id="S3e-Da-TN1"/>
+                <constraint firstAttribute="trailing" secondItem="BhP-VN-1It" secondAttribute="trailing" id="VwT-27-tKh"/>
+                <constraint firstItem="BhP-VN-1It" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="cHp-cm-wc4"/>
+                <constraint firstItem="KON-IY-JlK" firstAttribute="top" secondItem="BhP-VN-1It" secondAttribute="bottom" id="j6l-vP-eL3"/>
+                <constraint firstItem="BhP-VN-1It" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="tgA-iD-rrr"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="214" height="188"/>
+            <connections>
+                <outlet property="imageView" destination="BhP-VN-1It" id="4eg-v8-sfW"/>
+                <outlet property="label" destination="BnT-ab-VwM" id="ak6-0d-eDF"/>
+            </connections>
+            <point key="canvasLocation" x="-3" y="34"/>
+        </collectionViewCell>
+    </objects>
+</document>
